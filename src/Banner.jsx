@@ -3,6 +3,12 @@ import React, { useState, useEffect } from "react";
 import requests from "./request";
 import axios from "./axios";
 
+import "./Banner.css";
+
+function truncate(str, n) {
+    return str?.length > n ? str.substr(0, n - 1) + "..." : str;
+}
+
 function Banner() {
     const [movie, setMovie] = useState([]);
 
@@ -28,7 +34,21 @@ function Banner() {
                 backgroundPosition: "center center",
             }}
         >
-            <div className="banner__contents"></div>
+            <div className="banner__contents">
+                {/* title */}
+                <h1 className="banner__title">
+                    {movie?.title || movie?.name || movie?.original_name}
+                </h1>
+
+                {/* Button */}
+                <button className="banner__btn">Play</button>
+                <button className="banner__btn">My List</button>
+
+                {/* description */}
+                <h3 className="banner__desc">
+                    {truncate(movie?.overview, 150)}
+                </h3>
+            </div>
         </header>
     );
 }
