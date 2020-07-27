@@ -1,0 +1,39 @@
+.row__posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row__posters::-webkit-scrollbar {
+    display: none;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.row__poster {
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    transition: transform 450ms ease;
+    margin-right: 10px;
+    backface-visibility: hidden;
+    -ms-transform: translateZ(0);
+    /* IE 9 */
+    -webkit-transform: translateZ(0);
+    /* Chrome, Safari, Opera */
+    transform: translateZ(0);
+    image-rendering: -moz-crisp-edges;
+    /* Firefox */
+    image-rendering: -o-crisp-edges;
+    /* Opera */
+    image-rendering: -webkit-optimize-contrast;
+    /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+    /* IE (non-standard property) */
+}
+
+.row__poster:hover {
+    transform: scale(1.08);
+}
