@@ -1,12 +1,21 @@
-# Netflix Clone | ReactJS
+# Netflix - Clone
 
-TASK:
+This project is a simplified front end clone of Netflix. It was created with React and CSS (Grid and Flexbox). It uses The MovieDB Api.
 
--   [x] Get TMDB API Key
--   [x] Create React App
--   [x] Setup Firbase Hosting
--   [x] Get all the Movies
--   [x] Build the Rows
--   [x] Build the Banner
--   [x] Build the Nab Bar
--   [x] Add Trailer Popups
+![example-site](https://raw.githubusercontent.com/superneutrino8/meower-tweet/master/client/assets/meower-live.jpg)
+
+Created Using NodeJS, Express and MongoDB
+
+[Click Here For Preview](https://netflix-clone-b01d5.web.app/)
+
+## Tech Stack
+
+- Webpack 
+- Axios
+- React
+- Flexbox
+
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE.md).
