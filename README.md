@@ -1,6 +1,7 @@
 # Netflix - Clone
 
-This project is a simplified front end clone of Netflix. It was created with React and CSS (Grid and Flexbox). It uses The MovieDB Api.
+This project is a simplified front end clone of Netflix. 
+It was created with React and CSS (Grid and Flexbox). It uses The TMDB API.
 
 ![example-site](https://raw.githubusercontent.com/superneutrino8/netlfix-clone/master/src/NetflixClone.jpg)
 
